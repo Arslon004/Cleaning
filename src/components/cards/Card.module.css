@@ -1,0 +1,36 @@
+.about__row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 57px;
+}
+
+.about__card{
+ text-align: center;
+}
+.card__img{
+  margin-bottom: 40px;
+}
+
+.card__title{
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36.01px;
+  text-align: center;
+  color: rgba(33, 31, 84, 1);
+}
+
+.card__text{
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30.01px;
+  text-align: center;
+}
+@media only screen and (max-width:900px){
+  .about__row{
+    grid-template-columns: 1fr ;
+  }
+  .about__card{
+    margin-bottom: 30px;
+  }
+}

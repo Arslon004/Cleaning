@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 78px;
+}
+
+.home__left{
+  max-width: 591px;
+}
+.home__title{
+  margin-bottom: 22px;
+  font-family: Roboto;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 73.98px;
+  text-align: left;
+  color: rgba(33, 31, 84, 1);
+}
+
+.home__text{
+  margin-bottom: 34px;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30.01px;
+  text-align: left;
+  color: rgba(110, 113, 145, 1);
+}
+.home__button{
+  display: flex;
+  align-items: center;
+}
+.home__button--btn{
+  margin-right: 28px;
+}
+
+ @media only screen and (max-width:1200px){
+  .home{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home__right{
+    margin-bottom: 30px;
+  }
+  .home__left{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+ }
+  @media only screen and (max-width:850px){
+   .home__left{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+ }
+  @media only screen and (max-width: 750px){
+   .home__left{
+    max-width: 100%;
+   }
+   .home__right img{
+    max-width: 100%;
+   }
+}
+ @media only screen and (max-width: 600px){
+  .home__button{
+    display: flex;
+    flex-direction: column;
+  }
+}
