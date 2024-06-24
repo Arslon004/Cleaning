@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
 
-.navbar{
+.navbar {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -9,21 +15,31 @@
   align-items: center;
 }
 
-.navbar__left{
+.navbar_shrink {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar__left {
   display: flex;
   align-items: center;
 }
-.logo__link{
+
+.logo__link {
   margin-right: 41px;
 }
 
+.navbar__button {
+  margin-right: 30px;
+}
 
-.navbar__list{
+.navbar__list {
   display: flex;
   align-items: center;
   gap: 22px;
 }
-.navbar__link{
+
+.navbar__link {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
@@ -31,17 +47,19 @@
   text-align: left;
   color: rgba(33, 31, 84, 1);
   display: inline-block;
-  transition: text-decoration 2s linear ;
+  transition: text-decoration 2s linear;
 }
-.navbar__link:hover{
+
+.navbar__link:hover {
   text-decoration: underline;
 }
-.navbar__right{
+
+.navbar__right {
   display: flex;
   align-items: center;
 }
 
-.navbar__favorite{
+.navbar__favorite {
   margin-right: 24px;
   font-family: Roboto;
   font-size: 18px;
@@ -50,12 +68,16 @@
   text-align: left;
   color: rgba(33, 31, 84, 1);
 }
-.hamburger{
+
+.hamburger {
   background-color: rgba(0, 0, 0, 0.7);
-  margin-left: 10px;
+  position: absolute;
+  top: 42px;
+  right: 20px;
   display: none;
 }
-#navbar__responsive{
+
+.navbar__responsive {
   position: fixed;
   top: 0;
   right: -100%;
@@ -66,42 +88,54 @@
   background-color: black;
   width: 100%;
 }
-.res__nav--item{
+
+.open {
+  right: 0 !important;
+}
+
+.res__nav--item {
   margin: 30px 0;
   text-align: center;
 }
-.res__nav--link{
+
+.res__nav--link {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
 }
-.close{
+
+.close {
   position: absolute;
-  top: 40px;right: 40px;
+  top: 40px;
+  right: 40px;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
- @media only screen and (max-width:950px){
-  .navbar__menus{
+@media only screen and (max-width: 950px) {
+  .navbar__menus {
     display: none;
   }
-  .hamburger{
+
+  .hamburger {
     display: inline-block;
   }
 }
- @media only screen and (max-width:550px){
-   .navbar{
+
+@media only screen and (max-width: 550px) {
+  .navbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   }
-   .navbar__logo{
+  }
+
+  .navbar__logo {
     margin-bottom: 20px;
-   }
+  }
 }
+
 /*@media only screen and (max-width:550px){
   .navbar{
     align-items: flex-start;

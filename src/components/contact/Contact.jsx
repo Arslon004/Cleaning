@@ -1,9 +1,8 @@
 import React from 'react'
 
+import Call from "../call/Call"
 import styles from "./Contact.module.css";
 
-import Call from "../call/Call"
-import Button from '../buttons/Button';
 const Contact = () => {
   return (
     <section id='contact' className={styles.contactSection}>

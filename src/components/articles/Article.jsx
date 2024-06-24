@@ -1,12 +1,13 @@
 import React from 'react'
 
-import styles from "./Article.module.css";
 
 import Button from "../buttons/Button"
 import Buttofree from "../buttonFree/Button";
 
 import image1 from "../../assets/images/article1.png";
 import image2 from "../../assets/images/article2.png";
+
+import styles from "./Article.module.css";
 
 const Article = () => {
   return (

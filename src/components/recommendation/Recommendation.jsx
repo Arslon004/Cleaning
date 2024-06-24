@@ -1,9 +1,9 @@
 import React from 'react'
 
-import styles from "./Recommendation.module.css"
 
 import recomendation from "../../assets/images/recomendation.png";
 import callImage from "../../assets/images/call.svg";
+import styles from "./Recommendation.module.css"
 
 import Button from "../buttons/Button";
 

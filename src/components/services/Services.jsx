@@ -1,12 +1,12 @@
 import React from 'react'
 
-import styles from "./Services.module.css"
-import Button from "../buttonFree/Button"
-
 import image1 from "../../assets/images/services1.png";
 import image2 from "../../assets/images/services2.png";
 import image3 from "../../assets/images/services3.png";
 
+import Button from "../buttonFree/Button"
+
+import styles from "./Services.module.css"
 
 const Services = () => {
   return (

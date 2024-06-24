@@ -1,10 +1,10 @@
 import React from 'react'
 
-import styles from "./Home.module.css"
-import homeSvg from "../../assets/images/home.svg"
-
 import Button from "../buttons/Button"
 import Call from "../call/Call"
+import homeSvg from "../../assets/images/home.svg"
+import styles from "./Home.module.css"
+
 
 const Home = () => {
   return (

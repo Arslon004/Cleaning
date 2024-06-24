@@ -1,8 +1,8 @@
 import React from 'react'
 
-import styles from "./Footer.module.css";
-import logo from "../../assets/images/logo.svg";
 import Button from "../buttons/Button"
+import logo from "../../assets/images/logo.svg";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className={styles.footer__bottom}>
-            <div className="footer__bottom--left">
+            <div className={styles['footer__bottom--left']}>
               <a href="#logo"><img src={logo} alt="" /></a>
             </div>
             <div className="footer__bottom--right">

@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from "./Card.module.css"
 
 import aboutImg1 from "../../assets/images/about1.png"
 import aboutImg2 from "../../assets/images/about2.png"
 import aboutImg3 from "../../assets/images/about3'.png"
 
+import styles from "./Card.module.css"
 
 const Card = () => {
   return (
